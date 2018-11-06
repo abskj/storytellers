@@ -1,5 +1,5 @@
 <template>
-    <div debug>
+    <div>
         <div v-for="im in imurls" :key="im.key">
             <pic v-bind:imurl="im.text" :key="im.key"></pic>
             
@@ -25,6 +25,56 @@ export default {
           key: 1,
           text:
             "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
+        },
+        {
+          key: 0,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg"
+        },
+        {
+          key: 1,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
+        },
+        {
+          key: 0,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg"
+        },
+        {
+          key: 1,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
+        },
+        {
+          key: 0,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg"
+        },
+        {
+          key: 1,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
+        },
+        {
+          key: 0,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg"
+        },
+        {
+          key: 1,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
+        },
+        {
+          key: 0,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg"
+        },
+        {
+          key: 1,
+          text:
+            "https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg"
         }
       ]
     };
@@ -34,5 +84,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

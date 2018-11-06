@@ -12,7 +12,7 @@
         </div>
       </nav>
       </div>
-      <div class="row main">
+      <div class="row main" debug>
         <div class="row brand center">
           STORYTELLERS
         </div>
@@ -28,14 +28,18 @@
     <div style=" height:100vh;width:100vw;" class="black">
       <gallery></gallery>
     </div>
+    <app-footer>sgfsdasdfsfd</app-footer>
   </div>
 </template>
 
 <script>
 import Gallery from "./landing/gallery.vue";
+import Footer from "./landing/footer.vue";
+
 export default {
   components: {
-    gallery: Gallery
+    gallery: Gallery,
+    'app-footer' : Footer
   }
 };
 </script>
