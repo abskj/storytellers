@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div debug>
         <div v-for="im in imurls" :key="im.key">
             <pic v-bind:imurl="im.text" :key="im.key"></pic>
             

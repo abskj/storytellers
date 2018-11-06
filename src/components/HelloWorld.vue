@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="whole">
+    <div class="whole" g>
       <div class="row r1">
         <nav>
         <div class="nav-wrapper">
@@ -18,9 +18,9 @@
         </div>
         <div class="row message center">
           <mark>
-            Every artist tells a story through their art.
-          But the artist also creates a story when they tell one.
-          This is a place for those story tellers and some of us who want to be mesmerized by these stories.
+            Every art tells a story. <br>
+            But the creation is a story in itself. <br>
+            Tell your story to the world.
           </mark>
         </div>
       </div>
@@ -102,5 +102,9 @@ nav * li a {
 nav * li a:hover {
   box-shadow: 0px 0px 5px white;
   color: rgba(255, 255, 255, 0.685);
+}
+
+mark {
+  font-weight: bolder;
 }
 </style>
