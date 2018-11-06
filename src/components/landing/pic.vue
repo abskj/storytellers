@@ -6,31 +6,26 @@
 
 <script>
 export default {
-props:{
-    imurl:{
-        type:String
+  props: {
+    imurl: {
+      type: String
     }
-},
+  },
 
-mounted: function()
-    {
-        
-    },
-data(){
-    return{
-
-    }
-}
-}
+  mounted: function() {},
+  data() {
+    return {};
+  }
+};
 </script>
 
 <style scoped>
-.main{
-float:left;
-padding: 2%;
+.main {
+  float: left;
+  padding: 2%;
 }
 
-.main img:hover{
-    transform:scale(1.1, 1.1); 
+.main img:hover {
+  transform: scale(1.1, 1.1);
 }
 </style>
