@@ -1,7 +1,9 @@
 <template>
     <div>
-        <pic v-bind:imurl="imurls[0]"></pic>
-        
+        <div v-for="im in imurls">
+            <pic v-bind:imurl="im"></pic>
+            
+        </div>
     </div>
 </template>
 
@@ -14,7 +16,8 @@ components:{
  data(){
         return {
             imurls : [
-                'static/images/img1.jpg'
+                'https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_06.jpg',
+                'https://cdn.acidcow.com/pics/20131213/weird_and_awkward_stock_photos_13.jpg'
             ]
         }
     },

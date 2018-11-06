@@ -26,7 +26,11 @@ data(){
 
 <style scoped>
 .main{
-height: 200px;
-width: 200px;
+float:left;
+padding: 2%;
+}
+
+.main img:hover{
+    transform:scale(1.1, 1.1); 
 }
 </style>
