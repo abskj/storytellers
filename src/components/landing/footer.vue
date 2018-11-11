@@ -1,6 +1,7 @@
 <template>
-  <div class=green>
-  <div class="main">asdfsadf{{ text }}</div></div>
+  <div class="blue">
+      <div class="center">Under Development<br>{{ text }}</div>
+  </div>
 </template>
 
 <script>
@@ -15,9 +16,4 @@ export default {
 </script>
 
 <style scoped>
-div {
-  height: 500px;
-  width: 100%;
-  border: 5px solid green;
-}
 </style>
