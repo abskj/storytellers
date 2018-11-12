@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="height:75vh">
         <div class="row">
             <h2 class="heading">
             {{title}}
@@ -9,7 +9,7 @@
         </h5>
         </div>
         <div class="row">
-            <div class="flow-text">
+            <div class="desc">
                 {{content}}
             </div>
         </div>
@@ -41,5 +41,8 @@ export default {
 </script>
 
 <style>
-
+.desc{
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="whole" g>
+    <div class="whole">
       <div class="row r1">
         <nav>
         <div class="nav-wrapper">
@@ -12,7 +12,7 @@
         </div>
       </nav>
       </div>
-      <div class="row main" debug>
+      <div class="row main" >
         <div class="row brand center">
           STORYTELLERS
         </div>
