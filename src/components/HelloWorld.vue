@@ -16,12 +16,29 @@
         <div class="row brand center">
           STORYTELLERS
         </div>
-        <div class="row message center">
-          <mark>
-            Every art tells a story. <br>
-            But the creation is a story in itself. <br>
-            Tell your story to the world.
-          </mark>
+        <div class="row message" >
+          <div class="col s12 m4"></div>
+          <div class="col s12 m4">
+             <vue-typer
+          :text='["create","show","relive","share"]'
+          :repeat='Infinity'
+          :shuffle='true'
+          initial-action='erasing'
+          :pre-type-delay='70'
+          :type-delay='500'
+          :pre-erase-delay='2000'
+          :erase-delay='150'
+          erase-style='backspace'
+          :erase-on-complete='false'
+          caret-animation='blink' 
+      >
+      </vue-typer>
+      <mark>Original Art</mark>
+    
+          </div>
+          <div class="col s12 m4">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -35,11 +52,12 @@
 <script>
 import Gallery from "./landing/gallery.vue";
 import Footer from "./landing/footer.vue";
-
+import { VueTyper } from 'vue-typer'
 export default {
   components: {
     gallery: Gallery,
-    'app-footer' : Footer
+    'app-footer' : Footer,
+    'vue-typer': VueTyper
   }
 };
 </script>
@@ -51,8 +69,8 @@ export default {
       position: relative;
       top: 0px;
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.952),
-          rgba(71, 43, 6, 0.616)
+          rgb(0, 0, 0,0.8),
+          rgb(0, 0, 0,0.8)
         ),
         url("/static/images/hsda.jpg");
       background-size: cover;
@@ -73,19 +91,19 @@ export default {
       color: rgb(255, 255, 255);
     }
     .message {
-      margin-left: 20vw;
-      margin-right: 20vw;
-      font-family: "Almendra Display", cursive;
-      font-size: 2.5em;
-      /* color: rgb(255, 230, 0); */
+    
+      font-family: "Megrim", cursive;
+      font-size: 3.5em;
+      color: rgb(255, 0, 0);
       border-radius: 10px;
-      border: 0px rgb(146, 70, 8) solid;
+      font-weight: bolder;
       /* box-shadow: 0px 0px 10px rgb(14, 13, 13); */
     }
-    .message mark {
-      color: white;
-      background-color: rgb(43, 13, 43);
-    }
+    .vue-typer .custom.char {
+  color: rgb(255, 255, 255);
+  background-color: #1E1E1E;
+}
+    
     div:hover {
       border: 0px rgba(255, 0, 0, 0) solid;
     }
