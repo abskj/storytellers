@@ -1,6 +1,6 @@
 <template>
-    <div class="main yellow" v-bind:style="{ 'background-image': 'url(' + imurl + ')' }">
-        <div class=inner debug></div>
+    <div v-on:click="clickfunc" class="main yellow" v-bind:style="'background-image:url('+imurl+')'">
+        <div class="inner"></div>
     </div>
 </template>
 
@@ -9,42 +9,36 @@ export default {
   props: {
     imurl: {
       type: String
-    }
+    },
+    clickfunc:{
+      type: Object
+    },
   },
 
-  mounted: function() {},
+  mounted: function() {
+    // alert(this.url);
+  },
   data() {
-    return {};
+    return {
+      url:this.imurl,
+    };
   }
 };
 </script>
 
 <style scoped>
-.main {
-  float: left;
-  /* padding: 2%; */
-  width:19%;
-  margin:5px;
-}
+    .main{
+      height:300px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
 
-.inner{
-  background-color: black;
-}
-.main:hover > .inner{
-  transform: scale(1.1, 1.1);
-  opacity: 50%;
-}
-
-.main{
-  height:400px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-img{
-  vertical-align: middle;
-  width: 99%;
-  line-height: 100%;
-}
+    .inner{
+      background-color: black;
+    }
+    .main:hover{
+      transform: scale(1.1, 1.1);
+      opacity: 50%;
+    }
 </style>
